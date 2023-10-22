@@ -1,5 +1,5 @@
 package org.example;
 
-public class MechWeapon (Weapon,){
+public class MechWeapon {
     public String name
 }

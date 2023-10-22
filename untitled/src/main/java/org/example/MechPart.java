@@ -1,15 +1,16 @@
 package org.example;
 
 class MechPart {
-
-    public buildPart(Part mechPart){
-         if (!mechPart.getPartType){
-            Component[] newPart= {Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE};
+    private Component[] parts;
+    MechPart(boolean type){
+         if (!type){
+            Component[] parts= {Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE};
          }
          else{
-             Component[] newPart= {Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE,Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE};
-             return newPart;
+             Component[] parts= {Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE,Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE, Component.NONE};
          }
-
-
-}}
+    }
+    void Change(int type, Component newComponent){
+        parts[type]=newComponent;
+    }
+}
